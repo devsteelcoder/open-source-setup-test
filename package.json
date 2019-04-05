@@ -1,0 +1,38 @@
+{
+  "name": "open-source-setup-test",
+  "version": "0.0.0-development",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "commit": "git-cz",
+    "lint": "eslint src __tests__",
+    "lint:fix": "eslint --fix src __tests__",
+    "test": "jest --config jest.json --coverage",
+    "semantic-release": "semantic-release",
+    "travis-deploy-once": "travis-deploy-once"
+  },
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/devsteelcoder/open-source-setup-test"
+  },
+  "devDependencies": {
+    "commitizen": "3.0.7",
+    "cz-conventional-changelog": "2.1.0",
+    "eslint": "5.16.0",
+    "eslint-config-standard": "12.0.0",
+    "eslint-plugin-import": "2.16.0",
+    "eslint-plugin-node": "8.0.1",
+    "eslint-plugin-promise": "4.1.1",
+    "eslint-plugin-standard": "4.0.0",
+    "jest": "24.7.1",
+    "semantic-release": "^15.13.3",
+    "travis-deploy-once": "5.0.11"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
